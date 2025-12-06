@@ -5,7 +5,7 @@
 </div>
 
 <div align="center">
-  <strong>Personal link management reverse proxy browser extension</strong>
+  <strong>Link management reverse proxy browser extension</strong>
 </div>
 
 ---
@@ -18,9 +18,11 @@
 
 The extension intercepts requests to URLs matching the pattern `go/*` and redirects them to a configured base URL. For example:
 
-- `http://go/docs` → `https://your-redirect-host.com/docs`
-- `http://go/project` → `https://your-redirect-host.com/project`
-- `http://go/anything` → `https://your-redirect-host.com/anything`
+- `go/docs` → `https://your-link-management-host.com/docs` -> `https://doc-website.com`
+- `go/project` → `https://your-link-management-host.com/project` -> `https://project.com`
+- `go/anything` → `https://your-link-management-host.com/anything` -> `https://anything.com`
+
+You manage the underlying link management infrastructure while `go/` simplifies accessibility
 
 This enables you to:
 
@@ -40,7 +42,7 @@ This enables you to:
 ### Prerequisites
 
 - Node.js (v18 or higher)
-- Bun or npm/pnpm for package management
+- Bun (or npm/pnpm) for package management
 
 ### Installation
 
