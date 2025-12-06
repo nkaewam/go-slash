@@ -1,8 +1,8 @@
 {
-  "name": "go-link",
-  "displayName": "Go link",
+  "name": "go-slash",
+  "displayName": "go/",
   "version": "0.0.1",
-  "description": "Uberproxy for personal",
+  "description": "Uberproxy for personal links",
   "author": "nkaewam@",
   "scripts": {
     "dev": "plasmo dev",
@@ -25,7 +25,10 @@
   },
   "manifest": {
     "host_permissions": [
-      "https://*/*"
+      "*://go/*"
+    ],
+    "permissions": [
+      "declarativeNetRequest"
     ]
   }
 }
